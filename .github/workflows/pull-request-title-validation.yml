@@ -4,7 +4,7 @@ name: Pull Request Title Validation
 
 env:
   PR_TITLE: "${{ github.event.pull_request.title }}"
-  TITLE_REGEX: "^((SP|RA|REC)-[0-9]+ \\| .+|release_[0-9]{8}.*)$"
+  TITLE_REGEX: "^(([A-Z]{2,})-[0-9]+ \\| .+|release_[0-9]{8}.*)$"
 
 # Controls when the workflow will run
 on:
